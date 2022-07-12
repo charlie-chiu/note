@@ -7,4 +7,5 @@
 * [cURL](./articles/curl.md)
 * [TLS Certificates](./articles/tls-certificate.md)
 * [NGINX](./articles/nginx.md)
+* [bind - Name Server](./articles/bind.md)
 
