@@ -1,5 +1,3 @@
-# Summary
-
 * [Introduction](README.md)
 * [Units](./articles/units-of-storage.md)
 * [Domains](./articles/domains.md)
