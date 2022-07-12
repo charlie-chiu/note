@@ -13,7 +13,6 @@
 * [Golang](./go/README.md)
   * [Compile & Deploy](./go/compile-and-deploy.md)
   * [env](./go/env.md)
-  * [env](./go/env.md)
   * [loops](./go/loop.md)
   * [Pointer](./go/pointer.md)
   * [Race Condition](./go/race-condition.md)
