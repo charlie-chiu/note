@@ -5,4 +5,5 @@
 * [CLI commands](./articles/cli-commands.md)
 * [Git](./articles/git.md)
 * [cURL](./articles/curl.md)
+* [TLS Certificates](./articles/tls-certificate.md)
 
