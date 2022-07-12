@@ -1,6 +1,4 @@
 {
-    "title": "Charlie's Note",
-    "description": "查理的不分類技術筆記，什麼都有，什麼都寫",
     "plugins": [  "anchor-navigation-ex", "edit-link", "copy-code-button", "theme-comscore", "ga" ],
     "pluginsConfig": {
       "fontSettings": {
@@ -32,8 +30,11 @@
           }
       },
       "edit-link": {
-        "base": "https://github.com/charlie-chiu/note/edit/master/",
+        "base": "https://github.com/<你的 GitHub 帳號>/demo-build-and-publish-gitbook/edit/master/",
         "label": "Edit This Page"
+      },
+      "ga": {
+        "token": ""
       }
     }
 }
