@@ -2,6 +2,7 @@
 * [Units](./articles/units-of-storage.md)
 * [Domains](./articles/domains.md)
 * [CLI commands](./articles/cli-commands.md)
+* [CLI Redirection](./articles/cli-redirection.md)
 * [Docker](./articles/docker.md)
 * [Git](./articles/git.md)
 * [cURL](./articles/curl.md)
