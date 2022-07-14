@@ -18,3 +18,4 @@
   * [Race Condition](./go/race-condition.md)
   * [Time](./go/time.md)
   * [Type Alias](./go/type-alias.md)
+  * [goroutine](./go/ptc-goroutine.md)

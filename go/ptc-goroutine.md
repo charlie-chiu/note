@@ -23,4 +23,4 @@ goroutine 由 go runtime管理，當 blocking 時就會另起新的 thread 來�
 
 [Effective Go](https://go.dev/doc/effective_go#goroutines)
 
-[Golang | Goroutine vs Thread - GeeksforGeeks](https://www.geeksforgeeks.org/golang-goroutine-vs-thread/)
+[Goroutine vs Thread - GeeksforGeeks](https://www.geeksforgeeks.org/golang-goroutine-vs-thread/)
