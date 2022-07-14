@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Race Condition · Charlie's Note</title>
+        <title>goroutine · Charlie's Note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="time.html" />
     
-    
-    <link rel="prev" href="pointer.html" />
+    <link rel="prev" href="type-alias.html" />
     
 
     </head>
@@ -319,7 +317,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.13.5" data-path="race-condition.html">
+        <li class="chapter " data-level="1.13.5" data-path="race-condition.html">
             
                 <a href="race-condition.html">
             
@@ -358,7 +356,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.8" data-path="ptc-goroutine.html">
+        <li class="chapter active" data-level="1.13.8" data-path="ptc-goroutine.html">
             
                 <a href="ptc-goroutine.html">
             
@@ -406,7 +404,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Race Condition</a>
+        <a href=".." >goroutine</a>
     </h1>
 </div>
 
@@ -421,16 +419,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#references"><b></b>references</a></li></ul></div><a href="#references" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>Run with race condition test</p>
-<pre><code class="lang-shell">go run -race main.go
-</code></pre>
-<p>Can use <code>-race</code> with go build too, just use it!</p>
-<p>Test with</p>
-<pre><code class="lang-shell">go test -v -run TestClient/register_on_connect_and_unregister_on_disconnect -race
-</code></pre>
-<h1 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>references</h1>
-<p><a href="https://www.sohamkamani.com/blog/2018/02/18/golang-data-race-and-how-to-fix-it/" target="_blank">Data races in Go(Golang) and how to fix them &#x1F3C3;&#x200D;&#x2640;&#xFE0F; - Soham&apos;s blog</a>
-<a href="https://github.com/golang/go/wiki/MutexOrChannel" target="_blank">MutexOrChannel &#xB7; golang/go Wiki &#xB7; GitHub</a></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#processes-threads-coroutines-and-goroutines"><b></b>Processes, Threads, Coroutines and Goroutines</a></li><li><span class="title-icon "></span><a href="#process"><b></b>Process</a></li><li><span class="title-icon "></span><a href="#thread"><b></b>Thread</a></li><li><span class="title-icon "></span><a href="#references"><b></b>References</a></li></ul></div><a href="#processes-threads-coroutines-and-goroutines" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="processes-threads-coroutines-and-goroutines"><a name="processes-threads-coroutines-and-goroutines" class="anchor-navigation-ex-anchor" href="#processes-threads-coroutines-and-goroutines"><i class="fa fa-link" aria-hidden="true"></i></a>Processes, Threads, Coroutines and Goroutines</h1>
+<p><img src="ptc.png" alt=""></p>
+<p>goroutine &#x57FA;&#x672C;&#x4E0A;&#x5C31;&#x5728; coroutine &#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x540C;&#x6642;&#x4E5F;&#x53EF;&#x4EE5;&#x5F9E;&#x547D;&#x540D;&#x770B;&#x51FA;&#x5B83;&#x5011;&#x7684;&#x95DC;&#x806F;&#x3002;</p>
+<p>goroutine &#x7531; go runtime&#x7BA1;&#x7406;&#xFF0C;&#x7576; blocking &#x6642;&#x5C31;&#x6703;&#x53E6;&#x8D77;&#x65B0;&#x7684; thread &#x4F86;&#x8655;&#x7406;&#x5176;&#x4ED6; routine</p>
+<h1 id="process"><a name="process" class="anchor-navigation-ex-anchor" href="#process"><i class="fa fa-link" aria-hidden="true"></i></a>Process</h1>
+<ul>
+<li>PID = Process ID</li>
+<li>&#x6BCF;&#x500B; processor &#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6211;&#x5011;&#x6240;&#x8AAA;CPU &#x55AE;&#x6838;&#x3001;&#x96D9;&#x6838;&#x3001;&#x591A;&#x6838;&#x7684;&#x300C;&#x6838;&#x300D;&#xFF0C;&#x4E00;&#x6B21;&#x8655;&#x7406;&#x4E00;&#x500B;process</li>
+<li>process &#x662F;&#x5206;&#x914D;&#x8A18;&#x61B6;&#x9AD4;&#x7684;&#x5C0D;&#x8C61;</li>
+<li>&#x6BCF;&#x500B; process &#x662F;&#x4E92;&#x76F8;&#x7368;&#x7ACB;&#x7684;</li>
+<li>thread &#x7684;&#x5BB9;&#x5668;</li>
+</ul>
+<h1 id="thread"><a name="thread" class="anchor-navigation-ex-anchor" href="#thread"><i class="fa fa-link" aria-hidden="true"></i></a>Thread</h1>
+<ul>
+<li>&#x5206;&#x914D; CPU time &#x7684;&#x5C0D;&#x8C61;&#xFF0C;&#x4E5F;&#x662F;&#x5BE6;&#x969B;&#x5BE6;&#x884C; program &#x7684;&#x6700;&#x5C0F;&#x55AE;&#x4F4D;</li>
+<li>&#x6709;&#x4E9B;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8655;&#x7406; thread (PHP, Java)</li>
+<li>&#x540C;&#x4E00;&#x500B; process &#x4E0A;&#x7684; thread &#x53EF;&#x5171;&#x4EAB;&#x8A18;&#x61B6;&#x9AD4;</li>
+</ul>
+<h1 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>References</h1>
+<p><a href="https://blog.kennycoder.io/2020/05/16/%E9%80%B2%E7%A8%8B-Process-%E3%80%81%E7%B7%9A%E7%A8%8B-Thread-%E3%80%81%E5%8D%94%E7%A8%8B-Coroutine-%E7%9A%84%E6%A6%82%E5%BF%B5%E8%AC%9B%E8%A7%A3/" target="_blank">&#x9032;&#x7A0B; (Process)&#x3001;&#x7DDA;&#x7A0B; (Thread)&#x3001;&#x5354;&#x7A0B; (Coroutine) &#x7684;&#x6982;&#x5FF5;&#x8B1B;&#x89E3;</a></p>
+<p><a href="https://go.dev/doc/effective_go#goroutines" target="_blank">Effective Go</a></p>
+<p><a href="https://www.geeksforgeeks.org/golang-goroutine-vs-thread/" target="_blank">Goroutine vs Thread - GeeksforGeeks</a></p>
 
                                 
                                 </section>
@@ -458,14 +468,10 @@
 
             
                 
-                <a href="pointer.html" class="navigation navigation-prev " aria-label="Previous page: Pointer">
+                <a href="type-alias.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Type Alias">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="time.html" class="navigation navigation-next " aria-label="Next page: Time">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -474,7 +480,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Race Condition","level":"1.13.5","depth":2,"next":{"title":"Time","level":"1.13.6","depth":2,"path":"go/time.md","ref":"./go/time.md","articles":[]},"previous":{"title":"Pointer","level":"1.13.4","depth":2,"path":"go/pointer.md","ref":"./go/pointer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/charlie-chiu/note/edit/main/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Charlie's Note","gitbook":"*","description":"查理的不分類技術筆記，什麼都有，什麼都寫"},"file":{"path":"go/race-condition.md","mtime":"2022-07-14T16:10:09.413Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-14T16:10:42.733Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"goroutine","level":"1.13.8","depth":2,"previous":{"title":"Type Alias","level":"1.13.7","depth":2,"path":"go/type-alias.md","ref":"./go/type-alias.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/charlie-chiu/note/edit/main/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Charlie's Note","gitbook":"*","description":"查理的不分類技術筆記，什麼都有，什麼都寫"},"file":{"path":"go/ptc-goroutine.md","mtime":"2022-07-14T16:10:09.413Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-14T16:10:42.733Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
