@@ -1,6 +1,5 @@
 * [Introduction](README.md)
 * [Units](./articles/units-of-storage.md)
-* [Domains](./articles/domains.md)
 * [CLI commands](./articles/cli-commands.md)
 * [CLI Redirection](./articles/cli-redirection.md)
 * [Docker](./articles/docker.md)
@@ -9,7 +8,9 @@
 * [TLS Certificates](./articles/tls-certificate.md)
 * [NGINX](./articles/nginx.md)
 * [MySQL](./articles/mysql.md)
-* [bind - Name Server](./articles/bind.md)
+* [Domain Name System]
+  * [bind - Name Server](dns/bind.md)
+  * [Domains](dns/domains.md)
 * [Golang](./go/README.md)
   * [Compile & Deploy](./go/compile-and-deploy.md)
   * [env](./go/env.md)
