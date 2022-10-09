@@ -13,6 +13,7 @@
   * [Domains](dns/domains.md)
 * [Golang](./go/README.md)
   * [Compile & Deploy](./go/compile-and-deploy.md)
+  * [Multi-stage build with docker](./go/multi-stage-with-docker.md)
   * [env](./go/env.md)
   * [loops](./go/loop.md)
   * [Pointer](./go/pointer.md)
