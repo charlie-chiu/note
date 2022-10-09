@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CLI commands · Charlie's Note</title>
+        <title>Google Cloud Platform (WIP) · Charlie's Note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="cli-redirection.html" />
     
-    
-    <link rel="prev" href="units-of-storage.html" />
+    <link rel="prev" href="../kubernetes/secret.html" />
     
 
     </head>
@@ -110,9 +108,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="units-of-storage.html">
+        <li class="chapter " data-level="1.2" data-path="../articles/units-of-storage.html">
             
-                <a href="units-of-storage.html">
+                <a href="../articles/units-of-storage.html">
             
                     
                     Units
@@ -123,9 +121,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="cli-commands.html">
+        <li class="chapter " data-level="1.3" data-path="../articles/cli-commands.html">
             
-                <a href="cli-commands.html">
+                <a href="../articles/cli-commands.html">
             
                     
                     CLI commands
@@ -136,9 +134,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="cli-redirection.html">
+        <li class="chapter " data-level="1.4" data-path="../articles/cli-redirection.html">
             
-                <a href="cli-redirection.html">
+                <a href="../articles/cli-redirection.html">
             
                     
                     CLI Redirection
@@ -149,9 +147,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="docker.html">
+        <li class="chapter " data-level="1.5" data-path="../articles/docker.html">
             
-                <a href="docker.html">
+                <a href="../articles/docker.html">
             
                     
                     Docker
@@ -162,9 +160,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="git.html">
+        <li class="chapter " data-level="1.6" data-path="../articles/git.html">
             
-                <a href="git.html">
+                <a href="../articles/git.html">
             
                     
                     Git
@@ -175,9 +173,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="curl.html">
+        <li class="chapter " data-level="1.7" data-path="../articles/curl.html">
             
-                <a href="curl.html">
+                <a href="../articles/curl.html">
             
                     
                     cURL
@@ -188,9 +186,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="tls-certificate.html">
+        <li class="chapter " data-level="1.8" data-path="../articles/tls-certificate.html">
             
-                <a href="tls-certificate.html">
+                <a href="../articles/tls-certificate.html">
             
                     
                     TLS Certificates
@@ -201,9 +199,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="nginx.html">
+        <li class="chapter " data-level="1.9" data-path="../articles/nginx.html">
             
-                <a href="nginx.html">
+                <a href="../articles/nginx.html">
             
                     
                     NGINX
@@ -214,9 +212,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="mysql.html">
+        <li class="chapter " data-level="1.10" data-path="../articles/mysql.html">
             
-                <a href="mysql.html">
+                <a href="../articles/mysql.html">
             
                     
                     MySQL
@@ -453,9 +451,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="../gcp/">
+        <li class="chapter active" data-level="1.14" data-path="./">
             
-                <a href="../gcp/">
+                <a href="./">
             
                     
                     Google Cloud Platform (WIP)
@@ -528,7 +526,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >CLI commands</a>
+        <a href=".." >Google Cloud Platform (WIP)</a>
     </h1>
 </div>
 
@@ -543,56 +541,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#show-distribution"><b></b>show distribution</a></li><li><span class="title-icon "></span><a href="#find-file"><b></b>find file</a></li><li><span class="title-icon "></span><a href="#grep"><b></b>grep</a></li><li><span class="title-icon "></span><a href="#clear-file-contents"><b></b>clear file contents</a></li><li><span class="title-icon "></span><a href="#rm---batch-remove-with-prompt"><b></b>rm - batch remove with prompt</a></li><li><span class="title-icon "></span><a href="#du---disk-usage"><b></b>du - disk usage</a></li><li><span class="title-icon "></span><a href="#nohup-no-hang-up"><b></b>nohup (no hang up)</a></li><li><span class="title-icon "></span><a href="#&#x5C0D;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x57F7;&#x884C;&#x6307;&#x4EE4;"><b></b>&#x5C0D;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x57F7;&#x884C;&#x6307;&#x4EE4;</a></li></ul></div><a href="#show-distribution" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="show-distribution"><a name="show-distribution" class="anchor-navigation-ex-anchor" href="#show-distribution"><i class="fa fa-link" aria-hidden="true"></i></a>show distribution</h1>
-<pre><code class="lang-bash">cat /etc/*-release
-</code></pre>
-<h1 id="find-file"><a name="find-file" class="anchor-navigation-ex-anchor" href="#find-file"><i class="fa fa-link" aria-hidden="true"></i></a>find file</h1>
-<pre><code class="lang-bash">find . -name [file_name]
-</code></pre>
-<h1 id="grep"><a name="grep" class="anchor-navigation-ex-anchor" href="#grep"><i class="fa fa-link" aria-hidden="true"></i></a>grep</h1>
-<pre><code class="lang-bash">grep pattern filename
-grep -Rn <span class="hljs-string">&quot;keyword&quot;</span> *
-</code></pre>
-<p>-v &#x53CD;&#x5411;&#x641C;&#x5C0B; (&#x6392;&#x9664;&#x627E;&#x5230;&#x7684;)
--R recursive
--n with line number</p>
-<h1 id="clear-file-contents"><a name="clear-file-contents" class="anchor-navigation-ex-anchor" href="#clear-file-contents"><i class="fa fa-link" aria-hidden="true"></i></a>clear file contents</h1>
-<pre><code class="lang-bash">&gt; filename
-</code></pre>
-<p>PS: If you need sudo call, please consider to use truncate as answered here.</p>
-<p><a href="https://superuser.com/questions/90008/how-to-clear-the-contents-of-a-file-from-the-command-line" target="_blank">linux - How to clear the contents of a file from the command line? - Super User</a></p>
-<h1 id="rm---batch-remove-with-prompt"><a name="rm---batch-remove-with-prompt" class="anchor-navigation-ex-anchor" href="#rm---batch-remove-with-prompt"><i class="fa fa-link" aria-hidden="true"></i></a>rm - batch remove with prompt</h1>
-<pre><code class="lang-bash">rm -i name_pattern*
-</code></pre>
-<h1 id="du---disk-usage"><a name="du---disk-usage" class="anchor-navigation-ex-anchor" href="#du---disk-usage"><i class="fa fa-link" aria-hidden="true"></i></a>du - disk usage</h1>
-<pre><code class="lang-bash">du -h --max-depth=1
-</code></pre>
-<h1 id="nohup-no-hang-up"><a name="nohup-no-hang-up" class="anchor-navigation-ex-anchor" href="#nohup-no-hang-up"><i class="fa fa-link" aria-hidden="true"></i></a>nohup (no hang up)</h1>
-<pre><code class="lang-bash"><span class="hljs-comment">#basic</span>
-nohup php <span class="hljs-_">-f</span> play.php &amp;
-
-<span class="hljs-comment"># to log file</span>
-nohup <span class="hljs-variable">$COMMAND</span> &gt; logfile
-
-<span class="hljs-comment"># with env</span>
-env PORT=8088 nohup ./pong &amp;
-</code></pre>
-<h1 id="&#x5C0D;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x57F7;&#x884C;&#x6307;&#x4EE4;"><a name="&#x5C0D;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x57F7;&#x884C;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5C0D;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x57F7;&#x884C;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0D;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x57F7;&#x884C;&#x6307;&#x4EE4;</h1>
-<pre><code class="lang-bash">ssh {host} {<span class="hljs-built_in">command</span>} ...
-
-<span class="hljs-meta">#!/bin/bash</span>
-<span class="hljs-comment">#flash2DB disk usage check</span>
-
-hosts=`cat flash2DB_list`
-<span class="hljs-keyword">for</span> host <span class="hljs-keyword">in</span> <span class="hljs-variable">$hosts</span>
-<span class="hljs-keyword">do</span>
-    <span class="hljs-keyword">if</span> [[ <span class="hljs-variable">$host</span> == *<span class="hljs-string">&quot;#&quot;</span>* ]]; <span class="hljs-keyword">then</span>
-       <span class="hljs-built_in">continue</span>
-    <span class="hljs-keyword">fi</span>
-    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;checking <span class="hljs-variable">$host</span> ...&quot;</span>
-    ssh <span class="hljs-variable">$host</span> df -h | sed <span class="hljs-string">&apos;s/%/ %/&apos;</span> | awk <span class="hljs-string">&apos;NR!=1{if ($5 &gt;= 50) {print $0}}&apos;</span> | sed <span class="hljs-string">&apos;s/ %/%/&apos;</span>
-<span class="hljs-keyword">done</span>
-</code></pre>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#google-cloud-platform"><b></b>Google Cloud Platform</a></li><li><span class="title-icon "></span><a href="#basic-commands"><b></b>Basic Commands</a></li></ul></div><a href="#google-cloud-platform" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="google-cloud-platform"><a name="google-cloud-platform" class="anchor-navigation-ex-anchor" href="#google-cloud-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Google Cloud Platform</h1>
+<h1 id="basic-commands"><a name="basic-commands" class="anchor-navigation-ex-anchor" href="#basic-commands"><i class="fa fa-link" aria-hidden="true"></i></a>Basic Commands</h1>
 
                                 
                                 </section>
@@ -620,14 +570,10 @@ hosts=`cat flash2DB_list`
 
             
                 
-                <a href="units-of-storage.html" class="navigation navigation-prev " aria-label="Previous page: Units">
+                <a href="../kubernetes/secret.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Secret">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="cli-redirection.html" class="navigation navigation-next " aria-label="Next page: CLI Redirection">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -636,7 +582,7 @@ hosts=`cat flash2DB_list`
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CLI commands","level":"1.3","depth":1,"next":{"title":"CLI Redirection","level":"1.4","depth":1,"path":"articles/cli-redirection.md","ref":"./articles/cli-redirection.md","articles":[]},"previous":{"title":"Units","level":"1.2","depth":1,"path":"articles/units-of-storage.md","ref":"./articles/units-of-storage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/charlie-chiu/note/edit/main/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Charlie's Note","gitbook":"*","description":"查理的不分類技術筆記，什麼都有，什麼都寫"},"file":{"path":"articles/cli-commands.md","mtime":"2022-10-09T23:25:08.428Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-09T23:25:48.591Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Google Cloud Platform (WIP)","level":"1.14","depth":1,"next":{"title":"BigTable","level":"1.14.1","depth":2,"ref":"","articles":[]},"previous":{"title":"Secret","level":"1.13.1","depth":2,"path":"kubernetes/secret.md","ref":"./kubernetes/secret.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/charlie-chiu/note/edit/main/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Charlie's Note","gitbook":"*","description":"查理的不分類技術筆記，什麼都有，什麼都寫"},"file":{"path":"gcp/README.md","mtime":"2022-10-09T23:25:08.432Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-09T23:25:48.591Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
