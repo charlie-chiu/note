@@ -11,6 +11,7 @@
 * Domain Name System
   * [bind - Name Server](dns/bind.md)
   * [Domains](dns/domains.md)
+  * [Rule of Record](dns/rule-of-record.md)
 * [Golang](./go/README.md)
   * [Compile & Deploy](./go/compile-and-deploy.md)
   * [Multi-stage build with docker](./go/multi-stage-with-docker.md)
