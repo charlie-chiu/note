@@ -26,4 +26,5 @@ CNAME, MX, NS :
 
 
 [Link CName record to another domain, but without subdomain - Server Fault](https://serverfault.com/questions/288820/link-cname-record-to-another-domain-but-without-subdomain)
+
 [Is Root domain CNAME to other domain allowed by DNS RFC? - Stack Overflow](https://stackoverflow.com/questions/655235/is-root-domain-cname-to-other-domain-allowed-by-dns-rfc)
