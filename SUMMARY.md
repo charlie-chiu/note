@@ -24,3 +24,6 @@
   * [goroutine](./go/ptc-goroutine.md)
 * Kubernetes
   * [Secret](./kubernetes/secret.md)
+* [Google Cloud Platform (WIP)](./gcp/README.md)
+  * BigTable
+  * GKE 升級記錄
