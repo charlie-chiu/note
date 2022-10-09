@@ -8,7 +8,7 @@
 * [TLS Certificates](./articles/tls-certificate.md)
 * [NGINX](./articles/nginx.md)
 * [MySQL](./articles/mysql.md)
-* [Domain Name System]
+* Domain Name System
   * [bind - Name Server](dns/bind.md)
   * [Domains](dns/domains.md)
 * [Golang](./go/README.md)
