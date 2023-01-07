@@ -9,7 +9,7 @@ kubectl create secret generic db-user-pass \
 note: `--from-file` will create a secret value with filename as key field
 
 
-# Get context of a secret
+# Get content of a secret
 since GCP Console can't reveal secret value, you should use cli tool to get value
 
 ```shell
